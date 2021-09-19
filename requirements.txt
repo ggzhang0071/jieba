@@ -1,0 +1,13 @@
+certifi==2021.5.30
+charset-normalizer==2.0.6
+decorator==5.1.0
+graphviz==0.17
+idna==3.2
+jieba==0.42.1
+numpy==1.16.4
+objgraph==3.5.0
+paddlepaddle-tiny==1.6.1
+protobuf==3.18.0
+requests==2.26.0
+six==1.16.0
+urllib3==1.26.6

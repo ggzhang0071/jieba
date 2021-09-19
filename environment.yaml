@@ -1,0 +1,35 @@
+name: jieba
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - ca-certificates=2021.7.5=h06a4308_1
+  - certifi=2021.5.30=py36h06a4308_0
+  - libgcc-ng=9.1.0=hdf63c60_0
+  - ncurses=5.9=10
+  - openssl=1.0.2u=h7b6447c_0
+  - pip=21.2.2=py36h06a4308_0
+  - python=3.6.0=2
+  - readline=6.2=0
+  - setuptools=58.0.4=py36h06a4308_0
+  - sqlite=3.13.0=1
+  - tk=8.5.19=2
+  - wheel=0.37.0=pyhd3eb1b0_1
+  - xz=5.2.5=h7b6447c_0
+  - zlib=1.2.11=h7b6447c_3
+  - pip:
+    - charset-normalizer==2.0.6
+    - decorator==5.1.0
+    - idna==3.2
+    - jieba==0.42.1
+    - numpy==1.16.4
+    - objgraph==3.5.0
+    - paddlepaddle-tiny==1.6.1
+    - protobuf==3.18.0
+    - python-graphviz==0.17
+    - requests==2.26.0
+    - six==1.16.0
+    - urllib3==1.26.6
+prefix: /root/anaconda3/envs/jieba
+
