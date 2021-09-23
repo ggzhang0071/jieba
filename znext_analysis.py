@@ -1,4 +1,7 @@
 import json
+from json import encoder
+from json import decoder
+from operator import index
 import jieba
 import jieba.analyse
 path="znext_data/question_cn_processed.json"
@@ -20,9 +23,21 @@ for i  in  range(len(keywords)):
             repeated[keyword].append(i)
         else:
             repeated[keyword]=[i]
+res={}
+res={key:val for  key,val in  repeated.items()  if len(val)>1}
+        
+topic_stack=[]
+for keyword,topic_index in res.items():
+    topic_related={}
+    for i in topic_index:
+        topic_related[i]=data[i]["Text"]
+    topic_stack.append(topic_related)
 
-for  key,val in  repeated.items():
-    if len(val)>1:
-        print(key,val)        
+with open("output.json","wt",encoding="utf-8") as fid:
+    json.dump(topic_stack,fid,ensure_ascii=False,indent=2)
+
+
+
+    
 
     
